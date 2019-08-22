@@ -19,8 +19,10 @@ public class Conexao {
             BasicDBObject pessoa = new BasicDBObject();
             pessoa.put("nome", p.getNome());
             pessoa.put("idade", p.getIdade());
+            pessoa.put("cidade: ", p.getCidade());
+            pessoa.put("telefone: ", p.getTelefone());
             
-            DBCollection col = db.getCollection("Java_Teste_1");
+            DBCollection col = db.getCollection("dados");
             col.insert(pessoa);
         }catch(Exception e){
             System.out.println(e.getClass().getName()+ ", " + e.getMessage());

@@ -4,12 +4,10 @@ import java.net.UnknownHostException;
 
 public class Play {
     public static void main(String[] args) throws UnknownHostException {
-        Pessoa p1 = new Pessoa("Testando Código..", 3000);
+        Pessoa p1 = new Pessoa("Israel", 18, "Santa Helena", 419982731);
         Conexao conexao = new Conexao();
-        
-        int i = 0;
-        
-        for(i = 0; i < 3000; i++){
+                
+        for(int i = 0; i < 3000; i++){
             conexao.addPessoa(p1);
         }
     }
